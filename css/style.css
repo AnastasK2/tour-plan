@@ -499,8 +499,10 @@ template {
     margin-left: 43px;
   }
   .navbar-menu {
+    width: 677px;
     padding-top: 22px;
     padding-bottom: 22px;
+    margin: auto;
   }
   .navbar-menu__link {
     font-size: 12px;
