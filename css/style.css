@@ -480,6 +480,7 @@ template {
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
+    width: 95%;
   }
 }
 
@@ -551,7 +552,7 @@ template {
     width: 99px;
   }
   .container {
-    min-width: 400px;
+    max-width: 400px;
     width: 85%;
   }
   .navbar__search, .navbar__menu, .navbar__user, .navbar-bottom {
@@ -561,8 +562,7 @@ template {
 
 @media (min-width: 320px) and (max-width: 420px) {
   .container {
-    min-width: 279px;
-    width: 85%;
+    max-width: 279px;
   }
 }
 /*# sourceMappingURL=style.css.map */
