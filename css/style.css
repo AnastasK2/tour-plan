@@ -707,7 +707,7 @@ template {
 
 @media (min-width: 320px) and (max-width: 420px) {
   .container {
-    max-width: 279px;
+    width: 85%;
   }
 }
 /*# sourceMappingURL=style.css.map */
