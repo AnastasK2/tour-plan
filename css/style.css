@@ -596,11 +596,10 @@ template {
 .swiper-container {
   width: 100%;
   height: 400px;
-  position: relative;
   border-radius: 8px;
 }
 
-.swiper-container::after {
+.swiper-slide::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -610,12 +609,14 @@ template {
   right: 0;
   left: 0;
   z-index: 10;
+  border-radius: 8px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 122, 223, 0.48)), to(rgba(255, 255, 255, 0.128)));
   background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
 }
 
 .slider {
   width: 728px;
+  position: relative;
 }
 
 .slider-button {
