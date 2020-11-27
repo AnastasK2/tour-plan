@@ -1102,8 +1102,14 @@ template {
   .map {
     width: 340px;
   }
+  .reviews {
+    padding-bottom: 60px;
+  }
   .reviews-slider__item {
     max-width: 580px;
+  }
+  .reviews__title {
+    margin-bottom: 50px;
   }
 }
 
@@ -1234,12 +1240,19 @@ template {
   .subscribe {
     width: 100%;
   }
+  .reviews {
+    padding-bottom: 50px;
+  }
   .reviews__title {
+    max-width: 245px;
     font-weight: bold;
     font-size: 18px;
     line-height: 23px;
     text-align: center;
     text-transform: uppercase;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 42px;
   }
   .reviews-slider__item {
     padding: 0 30px 30px;
