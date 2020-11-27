@@ -11,6 +11,13 @@
         width: 100%
         height: 100%
         object-fit: cover
+  .card
+    width: 220px
+    height: 220px
+    // &__image
+    //   width: 100%
+    //   height: 100%
+    //   object-fit: cover
 @media (max-width: 992px)
   .container, .newsletter-wrapper
     max-width: 690px
@@ -53,6 +60,16 @@
         max-width: 580px
     &__title
       margin-bottom: 50px
+  .activities
+    padding-bottom: 50px
+    &-wrapper
+      flex-wrap: wrap
+  .card
+    width: 339px
+    height: 255px
+    margin-bottom: 20px
+    &__image
+      object-fit: none
 
 @media (max-width: 768px)
   .container
@@ -120,6 +137,9 @@
     &-slider
       &__item
         max-width: 540px
+  .activities
+    &-wrapper
+      flex-direction: column
 @media (max-width:576px)
   .logo
     width: 99px
@@ -167,6 +187,12 @@
           right: 50%
           margin-right: -80px
           transform: translate(-50, 0%)
+  .activities
+    &-wrapper
+      margin: auto
+  .card
+    width: 100%
+    height: 255px
 @media (min-width: 320px) and (max-width: 420px)
   .container
     width: 85%
@@ -184,3 +210,9 @@
         font-weight: 600
         font-size: 30px
         line-height: 38px
+  .activities
+    padding: 40px 0 40px
+    &__title
+      font-size: 18px
+      line-height: 23px
+      margin-bottom: 36px
