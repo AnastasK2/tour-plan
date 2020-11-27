@@ -674,6 +674,7 @@ template {
   padding: 26px 29px;
   color: #ffffff;
   border-radius: 8px;
+  font-family: Nunito;
 }
 
 .booking__info {
@@ -697,7 +698,7 @@ template {
 }
 
 .booking__start {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 10px;
   line-height: 14px;
 }
@@ -709,7 +710,8 @@ template {
 }
 
 .booking__per-room {
-  font-weight: normal;
+  font-style: normal;
+  font-weight: 400;
   font-size: 12px;
   line-height: 16px;
 }
@@ -736,6 +738,7 @@ template {
 
 .booking__description {
   margin-left: 9px;
+  font-style: normal;
 }
 
 .booking__call-center {
