@@ -1221,6 +1221,10 @@ template {
   grid-column: span 2;
 }
 
+.footer__legal {
+  margin-left: auto;
+}
+
 .footer__form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1303,6 +1307,8 @@ template {
 }
 
 .footer__message {
+  width: 100%;
+  min-height: 123px;
   background: #fff;
   border-radius: 4px;
   padding: 18px 23px;
@@ -1497,8 +1503,43 @@ template {
     max-width: 673px;
     width: 87%;
   }
-  .navbar__search, .navbar__menu, .navbar__user, .navbar-bottom {
+  body {
+    padding-top: 78px;
+  }
+  .navbar__mobile--fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 99;
+  }
+  .navbar__user--mobile--hidden, .navbar__search--mobile--hidden {
     display: none;
+  }
+  .navbar__user--mobile--visible, .navbar__search--mobile--visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar-bottom {
+    display: none;
+  }
+  .navbar-bottom--visible {
+    display: block;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 78px;
+  }
+  .navbar-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar-menu__item {
+    margin-bottom: 20px;
   }
   .menu-button {
     width: 16px;
@@ -1741,7 +1782,13 @@ template {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  .footer__input {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
   .footer__message {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
     margin-bottom: 15px;
   }
   .footer__info {
@@ -1784,9 +1831,22 @@ template {
     line-height: 23px;
     margin-bottom: 36px;
   }
+  .activities__title--inline {
+    margin-bottom: 20px;
+  }
   .footer-wrapper {
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
+  }
+  .footer__social-network {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer__social-links {
+    margin-top: 10px;
+  }
+  .footer__form {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

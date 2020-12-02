@@ -131,9 +131,35 @@
   .container
     max-width: 673px
     width: 87%
+  body
+    padding-top: 78px
   .navbar
-    &__search, &__menu, &__user, &-bottom
+    &__mobile
+      &--fixed
+        position: fixed
+        left: 0
+        top: 0
+        right: 0
+        z-index: 99
+    &__user, &__search
+      &--mobile
+        &--hidden
+          display: none
+        &--visible
+          display: flex
+    &-bottom
       display: none
+      &--visible
+        display: block
+        position: fixed
+        left: 0
+        right: 0
+        bottom: 0
+        top: 78px
+    &-menu
+      flex-direction: column
+      &__item
+        margin-bottom: 20px
   .menu
     &-button
       width: 16px
@@ -214,7 +240,6 @@
       display: none
   .hotel
     &-slider
-
       height: 250px
     &__slider
       margin-bottom: 20px
@@ -293,7 +318,10 @@
         grid-column: 1
     &__form
       flex-wrap: wrap
+    &__input
+      flex-basis: 100%
     &__message
+      flex-basis: 100%
       margin-bottom: 15px
     &__info
       flex-basis: 100%
@@ -323,6 +351,15 @@
       font-size: 18px
       line-height: 23px
       margin-bottom: 36px
+      &--inline
+        margin-bottom: 20px
   .footer
     &-wrapper
       grid-template-columns: 100%
+    &__social
+      &-network
+        flex-wrap: wrap
+      &-links
+        margin-top: 10px
+    &__form
+      width: 100%
