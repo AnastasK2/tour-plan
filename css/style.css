@@ -1335,6 +1335,7 @@ template {
   color: #ffffff;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .footer__info {
