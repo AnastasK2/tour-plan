@@ -1382,7 +1382,7 @@ template {
     margin-left: 43px;
   }
   .navbar-menu {
-    width: 677px;
+    max-width: 677px;
     padding-top: 22px;
     padding-bottom: 22px;
     margin: auto;
@@ -1524,6 +1524,7 @@ template {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin: 0;
   }
   .navbar__user {
     -webkit-box-orient: vertical;
@@ -1679,9 +1680,6 @@ template {
     max-width: 400px;
     width: 85%;
   }
-  .navbar__search, .navbar__menu, .navbar__user, .navbar-bottom {
-    display: none;
-  }
   .hotel-slider {
     height: 250px;
   }
@@ -1787,6 +1785,7 @@ template {
     grid-row: 5;
     -ms-grid-column: 1;
     grid-column: 1;
+    margin: 0;
   }
   .footer__contact-details {
     -ms-grid-row: 6;
@@ -1828,6 +1827,9 @@ template {
 @media (min-width: 320px) and (max-width: 420px) {
   .container {
     width: 85%;
+  }
+  .navbar__search--mobile--visible {
+    width: 245px;
   }
   .hotel-slider {
     height: 179px;
