@@ -1668,8 +1668,7 @@ template {
     margin-right: 5px;
   }
   .footer__input {
-    -ms-flex-preferred-size: 45%;
-        flex-basis: 45%;
+    width: 45%;
   }
 }
 
