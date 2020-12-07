@@ -554,6 +554,10 @@ template {
   padding-bottom: 70px;
 }
 
+.hotel__back {
+  margin-top: 40px;
+}
+
 .hotel-info {
   display: -webkit-box;
   display: -ms-flexbox;
