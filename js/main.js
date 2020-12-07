@@ -91,4 +91,25 @@ var reviewsSlider = new Swiper('.reviews-slider', {
     modalOverlay.removeClass('modal__overlay--visible');
     modalDialog.removeClass('modal__dialog--visible');
   }
+  //обработка форма
+  $(".form").each(function (){
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Please specify your name",
+          minlength: "Name must be more 2 symbols"
+        },
+        mail: {
+          required: "Please enter your email address",
+          mail: "Your email address must be in the format of name@domain.com"
+        },
+        phone: {
+          required: "Please enter your phone number",
+        }
+      },
+    });
+  });
+
+  $('.phone').mask('+7(000) 000-00-00');
 });
