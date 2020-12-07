@@ -428,6 +428,10 @@ template {
   background-color: #0A223D;
 }
 
+.navbar-bottom--visible {
+  overflow-y: scroll;
+}
+
 .navbar-menu {
   list-style: none;
   padding: 31px 0;
@@ -1767,6 +1771,7 @@ template {
   }
   .modal__dialog {
     padding: 13px 45px;
+    width: 75%;
   }
 }
 
@@ -1921,7 +1926,7 @@ template {
             order: 1;
   }
   .modal__dialog {
-    padding: 13px 20px;
+    padding: 13px 40px;
   }
 }
 
@@ -1972,6 +1977,10 @@ template {
   }
   .footer__form {
     width: 100%;
+  }
+  .modal__dialog {
+    padding: 13px 20px;
+    width: 80%;
   }
 }
 /*# sourceMappingURL=style.css.map */
