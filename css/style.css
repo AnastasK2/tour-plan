@@ -1371,10 +1371,12 @@ template {
 }
 
 .modal__dialog {
+  max-width: 478px;
   position: fixed;
+  max-height: 100%;
+  overflow-y: auto;
   top: 50%;
   left: 50%;
-  max-width: 478px;
   padding: 33px 88px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -1919,7 +1921,7 @@ template {
             order: 1;
   }
   .modal__dialog {
-    padding: 13px 35px;
+    padding: 13px 20px;
   }
 }
 
