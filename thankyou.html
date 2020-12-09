@@ -20,7 +20,7 @@
     <header class="navbar navbar__mobile--fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="index.html" class="logo">
+          <a href="index.html" class="logo hvr-grow">
             <img
               src="img/horizontal-logo.svg"
               alt="Logo: Best Tour Plan"
@@ -37,7 +37,7 @@
               class="search__input"
               placeholder="Search Location"
             />
-            <button class="button search__button">
+            <button class="search__button">
               <img src="img/search.svg" alt="Icon: search" />
             </button>
           </form>
@@ -86,7 +86,7 @@
                   class="search__input"
                   placeholder="Search Location"
                 />
-                <button class="button search__button">
+                <button class="search__button">
                   <img src="img/search.svg" alt="Icon: search" />
                 </button>
               </form>
@@ -117,20 +117,6 @@
         <!-- /.container -->
       </nav>
     </header>
-    <nav class="breadcrumb">
-      <div class="container">
-        <ul class="breadcrumb-list">
-          <li class="breadcrumb-list__item">
-            <a href="#" class="breadcrumb-list__link"> Home </a>
-          </li>
-          <li class="breadcrumb-list__item">
-            <a href="#" class="breadcrumb-list__link"> Flash Offers </a>
-          </li>
-          <li class="breadcrumb-list__item">Grand Hilton Hotel</li>
-        </ul>
-      </div>
-      <!-- /.container -->
-    </nav>
     <!-- /.breadcrumb -->
     <section class="hotel">
       <div class="container">
@@ -296,21 +282,31 @@
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title-mb-3">Send us a message</h3>
-            <form action="send.php" method="POST" class="footer__form">
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Your Full Name*"
-                name="name"
-              />
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Phone Number*"
-                name="phone"
-              />
+            <form action="send.php" method="POST" class="footer__form form">
+              <div class="footer__input-group">
+                <input
+                  type="text"
+                  class="input footer__input"
+                  placeholder="Your Full Name*"
+                  name="name"
+                  minlength="2"
+                  required
+                />
+              </div>
+              <!-- /.footer__input-group -->
+              <div class="footer__input-group">
+                <input
+                  type="tel"
+                  class="input footer__input phone"
+                  placeholder="Phone Number*"
+                  name="phone"
+                  minlength="10"
+                  required
+                />
+              </div>
+              <!-- /.footer__input-group -->
               <textarea
-                class="footer__message"
+                class="message footer__message"
                 placeholder="Message"
                 name="message"
               ></textarea>
