@@ -12,6 +12,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link href="css/hover-min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
     <!-- <script
       src="https://api-maps.yandex.ru/2.1/?apikey=533d950c-b7c1-4cb1-a1f8-2e5c212b44aa&lang=ru_RU"
@@ -22,7 +24,7 @@
     <header class="navbar navbar__mobile--fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="index.html" class="logo">
+          <a href="index.html" class="logo hvr-grow">
             <img
               src="img/horizontal-logo.svg"
               alt="Logo: Best Tour Plan"
@@ -257,7 +259,7 @@
     </section>
     <section class="newsletter">
       <div class="newsletter-wrapper">
-        <h2 class="newsletter-title newsletter__title">
+        <h2 class="newsletter-title newsletter__title" data-aos="fade-right">
           subscribe to our
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
@@ -265,9 +267,11 @@
           action="send.php"
           method="POST"
           class="subscribe newsletter__subscribe form"
+          data-aos="fade-left"
         >
           <input
             type="email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
             class="subscribe__input"
             placeholder="Your email address"
             name="mail"
@@ -439,25 +443,25 @@
       <div class="container">
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities-wrapper">
-          <div class="card">
+          <div class="card" data-aos="fade-up" data-aos-delay="100">
             <img src="img/img1.jpg" alt="" class="card__image" />
             <h3 class="card__title">The curious corner of chamarel</h3>
             <button class="card__button">Book Now</button>
           </div>
           <!-- ./card -->
-          <div class="card">
+          <div class="card" data-aos="fade-up" data-aos-delay="300">
             <img src="img/img2.jpg" alt="" class="card__image" />
             <h3 class="card__title">Gymkhana club golf course</h3>
             <button class="card__button">Book Now</button>
           </div>
           <!-- ./card -->
-          <div class="card">
+          <div class="card" data-aos="fade-up" data-aos-delay="500">
             <img src="img/img3.jpg" alt="" class="card__image" />
             <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
             <button class="card__button">Book Now</button>
           </div>
           <!-- ./card -->
-          <div class="card">
+          <div class="card" data-aos="fade-up" data-aos-delay="700">
             <img src="img/img4.jpg" alt="" class="card__image" />
             <h3 class="card__title">The blue marine discovery quest</h3>
             <button class="card__button">Book Now</button>
@@ -618,6 +622,7 @@
                   class="input footer__input"
                   placeholder="Your Full Name*"
                   name="name"
+                  minlength="2"
                   required
                 />
               </div>
@@ -628,6 +633,7 @@
                   class="input footer__input phone"
                   placeholder="Phone Number*"
                   name="phone"
+                  minlength="10"
                   required
                 />
               </div>
@@ -683,10 +689,12 @@
             class="input modal__input phone"
             placeholder="Your Phone Number*"
             name="phone"
+            minlength="10"
             required
           />
           <input
             type="email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
             class="input modal__input"
             placeholder="Your Email*"
             name="mail"
@@ -710,6 +718,7 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
