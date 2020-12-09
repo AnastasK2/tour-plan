@@ -58,6 +58,8 @@
       &__link
         font-size: 12px
         line-height: 15px
+      &__link:hover
+        text-decoration: none
   .search
     &__input
       width: 340px
@@ -129,6 +131,10 @@
   .modal
     &__dialog
       padding: 23px 60px
+    &__wrapper
+      flex-wrap: wrap
+      &-button
+        margin-bottom: 5px
 @media (max-width: 768px)
   .container
     max-width: 673px
