@@ -279,7 +279,7 @@
   .logo
     width: 99px
   .container
-    max-width: 400px
+    // max-width: 400px
     width: 85%
   .hotel
     &-slider
@@ -290,6 +290,10 @@
     padding: 76px 0 83px 0
     &__title
       margin-bottom: 37px
+      width: 100%
+      white-space: none
+      overflow: none
+      text-overflow: none
   .subscribe
     width: 100%
   .reviews
@@ -343,9 +347,11 @@
       &-network
         grid-row: 2
         grid-column: 1
+        margin-left: 0
     &__additional
       grid-row: 3
       grid-column: 1
+      margin-left: 0
     &__categories
       grid-row: 4
       grid-column: 1
@@ -378,15 +384,21 @@
       padding: 13px 40px
 @media (min-width: 320px) and (max-width: 420px)
   .container
-    width: 85%
+    max-width: 85%
+    margin: auto
   .navbar
     &__search
       &--mobile
         &--visible
           width: 245px
   .hotel
+    padding-top: 5px
+    margin-bottom: 5px
     &-slider
       height: 179px
+    &-info
+      &__name
+        margin-bottom: 0
   .newsletter
     &-wrapper
       width: 280px
@@ -398,8 +410,17 @@
         font-weight: 600
         font-size: 30px
         line-height: 38px
+  .reviews
+    margin-top: 25px
+    &-slider
+      &__button
+        &--prev
+          margin-left: -100px
+        &--next
+          margin-right: -103px
   .activities
-    padding: 40px 0 40px
+    padding: 0 0 40px
+    margin-bottom: 10px
     &__title
       font-size: 18px
       line-height: 23px
@@ -413,9 +434,15 @@
       &-network
         flex-wrap: wrap
       &-links
-        margin-top: 10px
+        margin-top: 25px
+    &__contact
+      &-details
+        margin-top: 0
     &__form
       width: 100%
+    &-info
+      &__link
+        margin-right: 0
   .modal
     &__dialog
       padding: 13px 20px
