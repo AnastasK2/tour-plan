@@ -30,7 +30,7 @@ try {
     // Настройки вашей почты
     $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
     $mail->Username   = 'goodwork1298@gmail.com'; // Логин на почте
-    $mail->Password   = 'nkB-DvU-CFk'; // Пароль на почте
+    $mail->Password   = 'LM8-rqk-d3w-RVp'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
     $mail->setFrom('goodwork1298@gmail.com', 'Anastasia Zap'); // Адрес самой почты и имя отправителя
