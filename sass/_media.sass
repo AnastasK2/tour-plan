@@ -129,7 +129,7 @@
       grid-column: span 2
       width: 95px
     &__title
-      margin: 10px 0 20px 0
+      margin: 7px 0 20px 0
     &__social
       &-network
         grid-row: 1 / 2
@@ -285,6 +285,8 @@
     &__input
       &-group
         width: 45%
+    &__additional
+      margin-left: 0
   .modal
     &__dialog
       padding: 13px 45px
@@ -363,14 +365,14 @@
         grid-column: 1
         margin-left: 0
     &__additional
-      grid-row: 3
+      grid-row: 4
       grid-column: 1
       margin-left: 0
     &__categories
-      grid-row: 4
+      grid-row: 5
       grid-column: 1
     &__legal
-      grid-row: 5
+      grid-row: 3
       grid-column: 1
       margin: 0
     &__contact
@@ -398,7 +400,7 @@
       padding: 13px 40px
 @media (min-width: 320px) and (max-width: 420px)
   .container
-    max-width: 85%
+    max-width: 92%
     margin: auto
   .navbar
     &__search
@@ -408,12 +410,21 @@
   .hotel
     padding-top: 5px
     margin-bottom: 5px
+    padding-bottom: 30px
     &-slider
       height: 179px
+      margin-top: 10px
     &-info
+      padding-bottom: 0
       &__name
         margin-bottom: 0
+    &-grid
+      margin-top: 20px
+  .map
+    height: 210px
+    margin-top: 20px
   .newsletter
+    padding: 66px 0 66px 0
     &-wrapper
       width: 280px
     &-title
@@ -425,7 +436,7 @@
         font-size: 30px
         line-height: 38px
   .reviews
-    margin-top: 25px
+    padding-bottom: 30px
     &-slider
       &__button
         &--prev
@@ -444,11 +455,17 @@
   .footer
     &-wrapper
       grid-template-columns: 100%
+    &__title
+      flex-basis: 100%
+      margin-bottom: 10px
+      margin-top: 0
     &__social
       &-network
+        margin-top: 20px
         flex-wrap: wrap
       &-links
-        margin-top: 25px
+        margin-top: 10px
+        margin-left: 0
     &__contact
       &-details
         margin-top: 0
