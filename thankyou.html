@@ -4,16 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Tour Plan - Hotel Booking</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:ital,wght@0,700;0,800;1,400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="navbar navbar__mobile--fixed">
+    <header class="navbar navbar--mobile--fixed">
       <div class="container">
         <div class="navbar-top">
           <a href="index.html" class="logo hvr-grow">
@@ -40,7 +41,7 @@
 
           <a href="#" class="user navbar__user navbar__user--mobile--hidden">
             <img
-              src="img/user-avatar.jfif"
+              src="img/user-avatar.jpg"
               alt="Avatar: Nathan"
               class="user__avatar"
             />
@@ -113,7 +114,7 @@
         <!-- /.container -->
       </nav>
     </header>
-    <section class="hotel">
+    <section class="hotel hotel__thankyou">
       <div class="container">
         <div class="hotel-info">
           <div class="hotel-info__text">
@@ -140,7 +141,7 @@
             <img
               src="img/vertical-logo.svg"
               alt="Logo: Best Tour Plan"
-              class="logo footer__logo"
+              class="logo"
             />
           </a>
           <div class="footer__list footer__categories">
@@ -259,10 +260,20 @@
                     class="footer__icon"
                   />
                 </div>
-                Tel (business hours) : 269 1500 <br />
-                Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00
-                pm) <br />
-                Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+                <div class="footer__phone--links">
+                  <a href="tel:269 1500" class="footer__link">
+                    Tel (business hours) : 269 1500
+                  </a>
+                  <br />
+                  <a href="tel:52-56-61-38" class="footer__link">
+                    Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am –
+                    20:00 pm)
+                  </a>
+                  <br />
+                  <a href="tel:52-56-61-38" class="footer__link">
+                    Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+                  </a>
+                </div>
               </li>
               <li class="footer__item">
                 <div class="footer__icon-wrapper">
@@ -272,7 +283,9 @@
                     class="footer__icon"
                   />
                 </div>
-                cherly.lawson@example.com
+                <a href="mailto:cherly.lawson@example.com" class="footer__link">
+                  cherly.lawson@example.com
+                </a>
               </li>
             </ul>
           </div>
@@ -317,7 +330,7 @@
         <div class="footer-info">
           <div class="footer-info__links">
             <a href="#" class="footer-info__link">Disclaimer</a>
-            <a href="#" class="footer-info__link"> Conditions of use</a>
+            <a href="#" class="footer-info__link">Conditions of use</a>
             <a href="#" class="footer-info__link">Cancellation policy</a>
           </div>
           <div class="footer-info__paycards">
@@ -325,15 +338,15 @@
               src="img/paycards.png"
               alt="Icons: pay cards"
               class="footer-info__paycard"
+              loading="lazy"
             />
           </div>
         </div>
         <!-- /.footer__info -->
       </div>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/parallax.min.js"></script>
-    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
