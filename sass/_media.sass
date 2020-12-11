@@ -240,7 +240,6 @@
         margin-left: 0
     &-right
       flex-direction: column
-      min-height: 450px
     &-slider
       height: 350px
   .booking
@@ -390,7 +389,7 @@
       padding: 13px 40px
 @media (min-width: 320px) and (max-width: 420px)
   .container
-    max-width: 92%
+    width: 88%
     margin: auto
   .navbar
     &__search
@@ -400,24 +399,26 @@
   .hotel
     padding-top: 5px
     margin-bottom: 5px
-    padding-bottom: 30px
+    padding-bottom: 10px
     &-slider
-      height: 179px
-      margin-top: 10px
-    &-info
+      height: 186px
+      margin-top: -15px
       padding-bottom: 0
       &__name
         margin-bottom: 0
     &-grid
       margin-top: 20px
+    &-info
+      &__name
+        margin-bottom: 0
   .booking
     height: 210px
     margin-right: 0
   .map
     height: 210px
-    margin-top: 20px
+    margin-top: 5px
   .newsletter
-    padding: 66px 0 66px 0
+    padding: 66px 0 76px 0
     &-wrapper
       width: 280px
     &-title
@@ -429,6 +430,7 @@
         font-size: 30px
         line-height: 38px
   .reviews
+    padding-top: 10px
     padding-bottom: 30px
     &-slider
       &__button
@@ -437,7 +439,7 @@
         &--next
           margin-right: -103px
   .activities
-    padding: 0 0 40px
+    padding: 40px 0 40px
     margin-bottom: 10px
     &__title
       font-size: 18px
@@ -452,18 +454,26 @@
       flex-basis: 100%
       margin-bottom: 10px
       margin-top: 0
+      &--form
+        margin-top: 30px
     &__social
       &-network
-        margin-top: 20px
+        margin-top: 10px
         flex-wrap: wrap
       &-links
         margin-top: 10px
         margin-left: 0
     &__contact
       &-details
-        margin-top: 0
+        margin-top: 25px
+    &__text
+      font-weight: normal
+      font-size: 14px
+      line-height: 160%
+      margin-top: 25px
     &__form
       width: 100%
+      margin-top: 20px
     &-info
       &__link
         margin-right: 0
