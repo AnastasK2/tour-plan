@@ -362,14 +362,20 @@
       grid-template-columns: 1fr
       margin-bottom: 30px
       grid-row-gap: 30px
+    &__title
+      &--inline
+        flex-basis: 100%
     &__logo
       grid-row: 1
       grid-column: 1
     &__social
+      &-links
+        margin-left: 0
       &-network
         grid-row: 2
         grid-column: 1
         margin-left: 0
+        flex-wrap: wrap
     &__additional
       grid-row: 4
       grid-column: 1
@@ -488,7 +494,7 @@
     &__social
       &-network
         margin-top: 10px
-        flex-wrap: wrap
+        // flex-wrap: wrap
       &-links
         margin-top: 10px
         margin-left: 0
